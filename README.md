@@ -27,44 +27,37 @@ Ensure you have the following installed on your system before proceeding:
 
 2. Install the required project dependencies:
    ```bash
+   npm install
+   ````
 
-   ```
-
-npm install
-
-````
-
-Configuration
+# Configuration
 The application requires specific environment variables to function correctly. Create a .env file in the root directory and define the necessary configurations.
 
    ```bash
-# Define WhatsApp Group JIDs that have specific permissions
-# Must be a valid stringified JSON array
-ALLOWED_GROUPS=["1234567890-123456@g.us", "0987654321-654321@g.us"]
-````
+   # Define WhatsApp Group JIDs that have specific permissions
+   # Must be a valid stringified JSON array
+   ALLOWED_GROUPS=["1234567890-123456@g.us", "0987654321-654321@g.us"]
+   ````
 
 Running the Application
 Use the following npm scripts to run the application based on your current environment:
 
-```bash
-# Standard development mode
-npm run start
+  ```bash
+  # Standard development mode
+  npm run start
 
-# Watch mode (Recommended for active development)
-npm run start:dev
+  # Watch mode (Recommended for active development)
+  npm run start:dev
 
-# Production mode
-npm run start:prod
-```
+  # Production mode
+  npm run start:prod
+  ```
 
-Authentication Process
+# Authentication Process
 Upon starting the application for the first time without an existing session, a QR code will be generated and printed directly in the terminal. Open the WhatsApp mobile application, navigate to Linked Devices, and scan the QR code to authenticate.
-
 Authentication data will be securely stored in the local session/ directory for subsequent logins.
 
-Directory Structure
+# Directory Structure
 src/handlers/ - Contains the routing logic for specific scopes (group.handler.ts, private.handler.ts).
-
 src/commands/ - Houses the command registry (command.registry.ts) and individual command implementations.
-
 src/bot.service.ts - The core NestJS provider managing the Baileys socket initialization, connection state, and global event listeners.
