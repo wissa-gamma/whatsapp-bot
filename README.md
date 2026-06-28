@@ -21,8 +21,8 @@ Ensure you have the following installed on your system before proceeding:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/wissa-gamma/whatsapp-bot.git
+   cd whatsapp-bot
    ```
 
 2. Install the required project dependencies:
