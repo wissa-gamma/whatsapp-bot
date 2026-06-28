@@ -58,6 +58,6 @@ Upon starting the application for the first time without an existing session, a 
 Authentication data will be securely stored in the local session/ directory for subsequent logins.
 
 # Directory Structure
-src/handlers/ - Contains the routing logic for specific scopes (group.handler.ts, private.handler.ts).
-src/commands/ - Houses the command registry (command.registry.ts) and individual command implementations.
-src/bot.service.ts - The core NestJS provider managing the Baileys socket initialization, connection state, and global event listeners.
+src/handlers/ - Message routing logic (group & private).
+src/commands/ - Command registry and executions.
+src/bot.service.ts - Core bot connection and event manager.
