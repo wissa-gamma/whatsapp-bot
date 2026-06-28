@@ -58,6 +58,6 @@ Upon starting the application for the first time without an existing session, a 
 Authentication data will be securely stored in the local session/ directory for subsequent logins.
 
 # Directory Structure
-src/handlers/ - Message routing logic (group & private).
-src/commands/ - Command registry and executions.
-src/bot.service.ts - Core bot connection and event manager.
+* `src/handlers/` - Message routing logic (group & private).
+* `src/commands/` - Command registry and executions.
+* `src/bot.service.ts` - Core bot connection and event manager.
